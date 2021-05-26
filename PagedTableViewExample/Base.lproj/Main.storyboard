@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rmg-Ky-HP9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="uen-OD-qmw">
+            <objects>
+                <viewController id="Rmg-Ky-HP9" customClass="ViewController" customModule="PagedTableViewExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BDW-QO-fhg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M9x-cd-A4F" customClass="PagedTableView" customModule="PagedTableView">
+                                <rect key="frame" x="115" y="280" width="240" height="128"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Kn4-MM-Lqa"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ACR-lP-fbN"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8TZ-dQ-8zH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M9x-cd-A4F" firstAttribute="top" secondItem="8TZ-dQ-8zH" secondAttribute="top" constant="40" id="4yM-pN-5ci"/>
+                            <constraint firstItem="M9x-cd-A4F" firstAttribute="centerY" secondItem="BDW-QO-fhg" secondAttribute="centerY" id="Q12-eL-Ifz"/>
+                            <constraint firstItem="M9x-cd-A4F" firstAttribute="leading" secondItem="8TZ-dQ-8zH" secondAttribute="leading" id="gVv-wb-UrW"/>
+                            <constraint firstItem="M9x-cd-A4F" firstAttribute="centerX" secondItem="BDW-QO-fhg" secondAttribute="centerX" id="vwj-WO-JaD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pagedTableView" destination="M9x-cd-A4F" id="0mR-mr-fW1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01x-43-Uic" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237" y="93"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
